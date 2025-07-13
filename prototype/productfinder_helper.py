@@ -20,7 +20,7 @@ def download_page(record):
     
     # We'll get the file via HTTPS so we don't need to worry about S3 credentials
     # Getting the file on S3 is equivalent however - you can request a Range
-    prefix = 'https://commoncrawl.s3.amazonaws.com/'
+    prefix = 'https://data.commoncrawl.org/'
     #print(prefix + record['filename']) 
     #print("Status: ",record['status'])
     # We can then use the Range header to ask for just this set of bytes
